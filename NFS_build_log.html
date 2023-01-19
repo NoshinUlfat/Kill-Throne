@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>RESIDENT EVIL build log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<tt>
+Build started on: <u>21-07-2018 at 22:26.35</u><br />
+Build ended on: <u>21-07-2018 at 22:26.36</u><p />
+<b>-------------- Build: Debug in RESIDENT EVIL (compiler: GNU GCC Compiler)---------------</b><br />
+mingw32-g++.exe -Wall -fexceptions -g  -c "H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp" -o obj\Debug\NFS.o<br />
+mingw32-g++.exe  -o "bin\Debug\RESIDENT EVIL.exe" obj\Debug\NFS.o   -lopengl32 -lglu32 -lglut32 -lglaux -lwinmm<br />
+In file included from H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:5:0:<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\iGraphics.h:25:0: warning: ignoring #pragma comment  [-Wunknown-pragmas]</font><br />
+ #pragma comment(lib, "glut32.lib")<br />
+ ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\iGraphics.h:26:0: warning: ignoring #pragma comment  [-Wunknown-pragmas]</font><br />
+ #pragma comment(lib, "glaux.lib")<br />
+ ^<br />
+In file included from H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:5:0:<br />
+H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\iGraphics.h: In function 'int ImageLoad(char*, Image*)':<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\iGraphics.h:208:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]</font><br />
+         if(j == image-&gt;sizeX){<br />
+              ^<br />
+H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\iGraphics.h: In function 'void iShowBMP2(int, int, char*, int)':<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\iGraphics.h:298:9: warning: unused variable 'i' [-Wunused-variable]</font><br />
+     int i,j,k;<br />
+         ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\iGraphics.h:298:11: warning: unused variable 'j' [-Wunused-variable]</font><br />
+     int i,j,k;<br />
+           ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\iGraphics.h:298:13: warning: unused variable 'k' [-Wunused-variable]</font><br />
+     int i,j,k;<br />
+             ^<br />
+In file included from H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:5:0:<br />
+H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\iGraphics.h: At global scope:<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\iGraphics.h:607:72: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+ void iInitialize(int width=500, int height=500, char *title="iGraphics")<br />
+                                                                        ^<br />
+H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp: In function 'void iDraw()':<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:247:58: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+     iShowBMP(0,0,"bin\\debug\\images\\BACKGROUNDS\\1.bmp");<br />
+                                                          ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:248:83: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+     if(flag==6) iShowBMP(0,0,"bin\\Debug\\images\\background\\boss background.bmp");  // N : boss<br />
+                                                                                   ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:264:73: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+     iText(WIDTH-200, HEIGHT-100, " SCORE = ", GLUT_BITMAP_TIMES_ROMAN_24); // F: score show<br />
+                                                                         ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:268:65: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+     iText(60, HEIGHT-100, " LIFE = ", GLUT_BITMAP_TIMES_ROMAN_24); // F: life show<br />
+                                                                 ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:271:121: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+       if(flag_p)  iText(WIDTH/2-200, HEIGHT/2-20, " # # # PAUSED PRESS R FOR RESUME # # #  ", GLUT_BITMAP_TIMES_ROMAN_24); //<br />
+                                                                                                                         ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:331:81: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+        iShowBMP2(xchange3, ychange3,"bin\\debug\\images\\CHARACTERS\\hero.bmp",0);       //F :Hero main<br />
+                                                                                 ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:332:108: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+        if(flag==1) iShowBMP2(headless_gx,headless_gy,"bin\\debug\\images\\CHARACTERS\\headless ghost.bmp",0);  // N :headless ghost<br />
+                                                                                                            ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:333:107: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+        if(flag==0)  iShowBMP2(womenib_gx,womenib_gy,"bin\\debug\\images\\CHARACTERS\\woman in black.bmp",0);  // N : woman in black<br />
+                                                                                                           ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:336:75: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+             iShowBMP2(g3_x,g3_y,"bin\\Debug\\images\\CHARACTERS\\g3.bmp",0);<br />
+                                                                           ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:345:76: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+             iShowBMP2(g1_x,g1_y,"bin\\Debug\\images\\CHARACTERS\\g1..bmp",0);   // N : dementor<br />
+                                                                            ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:346:84: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+             iShowBMP2(human_x,human_y,"bin\\Debug\\images\\CHARACTERS\\human.bmp",0);  // N : human<br />
+                                                                                    ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:348:71: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+             iText(10, 60, "Save the human", GLUT_BITMAP_TIMES_ROMAN_24);<br />
+                                                                       ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:350:96: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+          if(flag==4) iShowBMP2(dragon_x,dragon_y,"bin\\Debug\\images\\CHARACTERS\\dragon.bmp",0);  // N : dragon<br />
+                                                                                                ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:351:84: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+          if(flag==5) iShowBMP2(g2_x,g2_y,"bin\\Debug\\images\\CHARACTERS\\g2.bmp",0);  // N : women in black<br />
+                                                                                    ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:354:90: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+                      iShowBMP2(boss_x,boss_y,"bin\\Debug\\images\\CHARACTERS\\boss.bmp",0);       // N : boss<br />
+                                                                                          ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:356:85: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+          if(flag==7) iText(WIDTH/2-100,HEIGHT/2,"YOU WIN",GLUT_BITMAP_TIMES_ROMAN_24);<br />
+                                                                                     ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:414:62: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+                  iText(140,190,"P",GLUT_BITMAP_TIMES_ROMAN_24);<br />
+                                                              ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:435:62: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+                  iText(650,190,"L",GLUT_BITMAP_TIMES_ROMAN_24);<br />
+                                                              ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:443:133: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+         iText(10, 40, " # # # NFS # # #  A and D for move  L is    for fire  P for pause R for resume\n", GLUT_BITMAP_TIMES_ROMAN_24); //<br />
+                                                                                                                                     ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:449:95: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+             iText(3*WIDTH/8, 5*HEIGHT/8, " # # # GAME OVER # # # ", GLUT_BITMAP_TIMES_ROMAN_24);<br />
+                                                                                               ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:450:92: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+             iText(3*WIDTH/8, 5*HEIGHT/8-40, " YOUR SCORE IS = ", GLUT_BITMAP_TIMES_ROMAN_24);<br />
+                                                                                            ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:452:100: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+             iText(3*WIDTH/8, 5*HEIGHT/8-120, "ENTER YOUR NAME, WORRIOR:",GLUT_BITMAP_TIMES_ROMAN_24);<br />
+                                                                                                    ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:472:66: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+         iText(10, 40, " Options Menu", GLUT_BITMAP_TIMES_ROMAN_24);<br />
+                                                                  ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:481:69: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+         iText(10, 40, "High Scores Page", GLUT_BITMAP_TIMES_ROMAN_24); //<br />
+                                                                     ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:498:66: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+         iText(10, 40, "Creators Page", GLUT_BITMAP_TIMES_ROMAN_24);<br />
+                                                                  ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:502:93: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+         iText(WIDTH/4, 7*HEIGHT/8,"1. SHAFAYAT HOSSAIN MAJUMDER", GLUT_BITMAP_TIMES_ROMAN_24);<br />
+                                                                                             ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:503:88: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+         iText(WIDTH/4, 7*HEIGHT/8-30,"   STUDENT ID: 1705080", GLUT_BITMAP_HELVETICA_18);<br />
+                                                                                        ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:504:87: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+         iText(WIDTH/4, 7*HEIGHT/8-55,"   CSE LEVEL-1 TERM-1", GLUT_BITMAP_HELVETICA_18);<br />
+                                                                                       ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:508:83: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+         iText(WIDTH/4, 5*HEIGHT/8,"2. FAHMID AL RIFAT", GLUT_BITMAP_TIMES_ROMAN_24);<br />
+                                                                                   ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:509:88: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+         iText(WIDTH/4, 5*HEIGHT/8-30,"   STUDENT ID: 1705087", GLUT_BITMAP_HELVETICA_18);<br />
+                                                                                        ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:510:87: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+         iText(WIDTH/4, 5*HEIGHT/8-55,"   CSE LEVEL-1 TERM-1", GLUT_BITMAP_HELVETICA_18);<br />
+                                                                                       ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:514:80: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+         iText(WIDTH/4, 3*HEIGHT/8,"3. NOSHIN ULFAT", GLUT_BITMAP_TIMES_ROMAN_24);<br />
+                                                                                ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:515:88: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+         iText(WIDTH/4, 3*HEIGHT/8-30,"   STUDENT ID: 1705089", GLUT_BITMAP_HELVETICA_18);<br />
+                                                                                        ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:516:87: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+         iText(WIDTH/4, 3*HEIGHT/8-55,"   CSE LEVEL-1 TERM-1", GLUT_BITMAP_HELVETICA_18);<br />
+                                                                                       ^<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:527:62: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+         iText(10, 40, "Help Page", GLUT_BITMAP_TIMES_ROMAN_24);<br />
+                                                              ^<br />
+H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp: In function 'void structload()':<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:819:84: warning: format '%s' expects argument of type 'char*', but argument 3 has type 'char (*)[3]' [-Wformat=]</font><br />
+         fscanf(file, "%s %s %d",&amp;player[i].serial, player[i].name, &amp;player[i].score);<br />
+                                                                                    ^<br />
+H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp: In function 'void nameinputbox()':<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:948:92: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+         iText(3*WIDTH/8+10, 5*HEIGHT/8-160+8, "Click to activate the box, enter to finish.");<br />
+                                                                                            ^<br />
+H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp: In function 'int main()':<br />
+<font color="#0000ff">H:\NFS 19.07.2018-20180719T183522Z-001\NFS 19.07.2018\NFS.cpp:1154:39: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+  iInitialize(WIDTH, HEIGHT, "GAMENAME");     //someone find a game name, PLEASE<br />
+                                       ^<br />
+Output file is bin\Debug\RESIDENT EVIL.exe with size 251.75 KB<br />
+<font color="#0000ff">Process terminated with status 0 (0 minute(s), 0 second(s))</font><br />
+<font color="#0000ff">0 error(s), 45 warning(s) (0 minute(s), 0 second(s))</font><br />
+</tt>
+</body>
+</html>
